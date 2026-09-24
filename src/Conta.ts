@@ -12,3 +12,22 @@ class Conta{
     }
 }
 
+class ContaPF extends Conta{
+    private cpf: number;
+    constructor(cpf: number, numero: number, titular: string){
+        super(numero, titular);
+        this.cpf = cpf;
+        
+    }
+
+}
+
+class ContaPJ extends Conta{
+    private cnpj: number;
+    constructor(cnpj: number, numero: number, titular: string){
+        super(numero, titular);
+        this.cnpj = cnpj;
+        
+    }
+
+}

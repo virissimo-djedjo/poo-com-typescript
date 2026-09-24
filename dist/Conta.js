@@ -11,4 +11,18 @@ class Conta {
         return Math.floor(Math.random() * 100000) + 1;
     }
 }
+class ContaPF extends Conta {
+    cpf;
+    constructor(cpf, numero, titular) {
+        super(numero, titular);
+        this.cpf = cpf;
+    }
+}
+class ContaPJ extends Conta {
+    cnpj;
+    constructor(cnpj, numero, titular) {
+        super(numero, titular);
+        this.cnpj = cnpj;
+    }
+}
 //# sourceMappingURL=Conta.js.map
